@@ -22,7 +22,7 @@ const generateProgressString = (current, total, length) => {
     </div>
     
     <div class="pl-4 border-l-2 border-tui-muted mb-8">
-      <p class="text-xl sm:text-2xl font-bold mb-2">Hello. I am ReasonForExistence</p>
+      <p class="text-xl sm:text-2xl font-bold mb-2">Hello. I am agasenka</p>
       <p class="text-tui-muted">> Yet another NixOS user & Software Engineer.</p>
     </div>
 

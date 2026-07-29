@@ -46,7 +46,7 @@ const allFiles = Object.keys(mdFiles).map(path => {
   
   return {
     permissions: '-rw-r--r--',
-    owner: 'ReasonForExistence',
+    owner: 'agasenka',
     size,
     rawSizeBytes,
     date,
@@ -73,7 +73,7 @@ const currentEntries = computed(() => {
       type: 'dir',
       name: '..',
       permissions: 'drwxr-xr-x',
-      owner: 'ReasonForExistence',
+      owner: 'agasenka',
       size: '4.0K',
       date: 'System'
     })
@@ -108,7 +108,7 @@ const currentEntries = computed(() => {
             type: 'dir',
             name: dirName,
             permissions: 'drwxr-xr-x',
-            owner: 'ReasonForExistence',
+            owner: 'agasenka',
             rawSizeBytes: 0,
             date: 'System' // Or you could use the most recent file's date here
           })
@@ -209,7 +209,7 @@ const renderedMarkdown = computed(() => {
           <div :class="['flex gap-2 md:gap-4 px-2 py-1 transition-colors', currentDir.length === 0 ? 'mb-0' : 'mb-4']">
             <span class="w-24 text-tui-muted hidden md:inline-block">drwxr-xr-x</span>
             <span class="w-4 text-tui-muted hidden md:inline-block">2</span>
-            <span class="w-48 text-tui-muted hidden md:inline-block">ReasonForExistence</span>
+            <span class="w-48 text-tui-muted hidden md:inline-block">agasenka</span>
             <span class="w-16 text-tui-muted hidden md:inline-block">users</span>
             <span class="w-10 text-right text-tui-muted">4.0K</span>
             <span class="w-12 sm:w-24 text-tui-muted">System</span>
@@ -219,7 +219,7 @@ const renderedMarkdown = computed(() => {
           <div v-if="currentDir.length === 0" class="flex gap-2 md:gap-4 px-2 py-1 transition-colors mb-4">
             <span class="w-24 text-tui-muted hidden md:inline-block">drwxr-xr-x</span>
             <span class="w-4 text-tui-muted hidden md:inline-block">5</span>
-            <span class="w-48 text-tui-muted hidden md:inline-block">ReasonForExistence</span>
+            <span class="w-48 text-tui-muted hidden md:inline-block">agasenka</span>
             <span class="w-16 text-tui-muted hidden md:inline-block">users</span>
             <span class="w-10 text-right text-tui-muted">4.0K</span>
             <span class="w-12 sm:w-24 text-tui-muted">System</span>
