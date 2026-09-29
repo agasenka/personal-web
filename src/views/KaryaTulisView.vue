@@ -2,7 +2,7 @@
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { marked } from 'marked'
 
-const mdFiles = import.meta.glob('../content/risalah/**/*.md', { query: '?raw', import: 'default', eager: true })
+const mdFiles = import.meta.glob('../content/karya-tulis/**/*.md', { query: '?raw', import: 'default', eager: true })
 
 const formatSize = (bytes) => {
   if (bytes < 1024) return bytes + 'B'
@@ -40,7 +40,7 @@ const parseFrontmatter = (content) => {
 const allFiles = Object.keys(mdFiles).map(path => {
   const rawContent = mdFiles[path]
   const { date, contentID, contentEN, hasTranslation } = parseFrontmatter(rawContent)
-  const relativePath = path.replace('../content/risalah/', '')
+  const relativePath = path.replace('../content/karya-tulis/', '')
   const rawSizeBytes = new Blob([rawContent]).size
   const size = formatSize(rawSizeBytes)
   
@@ -136,8 +136,8 @@ const currentEntries = computed(() => {
 })
 
 const currentPathString = computed(() => {
-  if (currentDir.value.length === 0) return '~/risalah'
-  return `~/risalah/${currentDir.value.join('/')}`
+  if (currentDir.value.length === 0) return '~/karya-tulis'
+  return `~/karya-tulis/${currentDir.value.join('/')}`
 })
 
 const handleKeydown = (e) => {
