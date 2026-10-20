@@ -22,8 +22,8 @@ const generateProgressString = (current, total, length) => {
     </div>
     
     <div class="pl-4 border-l-2 border-tui-muted mb-8">
-      <p class="text-xl sm:text-2xl font-bold mb-2">Hello. I am agasenka</p>
-      <p class="text-tui-muted">> Yet another NixOS user & Software Engineer.</p>
+      <p class="text-xl sm:text-2xl font-bold mb-2">Hello. I am Agas Pratama</p>
+      <p class="text-tui-muted">> agasenka · Yet another NixOS user</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -33,13 +33,13 @@ const generateProgressString = (current, total, length) => {
         </div>
         <div class="text-sm leading-relaxed text-tui-text space-y-4">
           <p>
-            I am a Systems Programmer focused on building efficient applications, low-level tooling, and robust software architectures. My primary language of choice is C++.
+            Systems Engineering, C/C++, DSP & Embedded Audio enthusiast. Sehari-hari saya pakai NixOS dengan config flake karena suka sistem yang reproducible dan bisa dibongkar pasang sendiri.
           </p>
           <p>
-            I enjoy working with Linux environments and declarative configurations like NixOS. Currently, I am focused on exploring systems architecture and writing clean, maintainable code.
+            Daily environment: NixOS + Niri + Neovim + fish. Suka ngulik hal-hal yang dekat dengan hardware, buffer audio, timing, dan pemrosesan sinyal real-time.
           </p>
           <p class="text-tui-muted italic">
-            "Keep it simple, stupid."
+            "If I could be a constellation with you."
           </p>
         </div>
       </div>
@@ -52,13 +52,13 @@ const generateProgressString = (current, total, length) => {
           <p class="font-bold text-tui-text"># Current Focus</p>
           <ul class="flex flex-col gap-2 text-tui-muted ml-2">
             <li class="flex items-start gap-2">
-              <span class="text-tui-text">></span> Writing high-performance C++ systems
+              <span class="text-tui-text">></span> Systems programming & low-level optimization
             </li>
             <li class="flex items-start gap-2">
-              <span class="text-tui-text">></span> Exploring memory-safe architectures
+              <span class="text-tui-text">></span> DSP pipelines & embedded/real-time audio
             </li>
             <li class="flex items-start gap-2">
-              <span class="text-tui-text">></span> Contributing to open-source tooling
+              <span class="text-tui-text">></span> Declarative system configurations & tooling
             </li>
           </ul>
         </div>
