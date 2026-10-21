@@ -209,21 +209,21 @@ const renderedMarkdown = computed(() => {
           <div :class="['flex gap-2 md:gap-4 px-2 py-1 transition-colors', currentDir.length === 0 ? 'mb-0' : 'mb-4']">
             <span class="w-24 text-tui-muted hidden md:inline-block">drwxr-xr-x</span>
             <span class="w-4 text-tui-muted hidden md:inline-block">2</span>
-            <span class="w-48 text-tui-muted hidden md:inline-block">agasenka</span>
-            <span class="w-16 text-tui-muted hidden md:inline-block">users</span>
-            <span class="w-10 text-right text-tui-muted">4.0K</span>
-            <span class="w-12 sm:w-24 text-tui-muted">System</span>
-            <span class="font-bold text-blue-400 truncate flex-1">.</span>
+            <span class="w-20 text-tui-muted hidden lg:inline-block">agasenka</span>
+            <span class="w-16 text-tui-muted hidden lg:inline-block">users</span>
+            <span class="w-10 text-right text-tui-muted hidden sm:inline-block">4.0K</span>
+            <span class="w-20 text-tui-muted hidden sm:inline-block">System</span>
+            <span class="font-bold text-blue-400">.</span>
           </div>
           
           <div v-if="currentDir.length === 0" class="flex gap-2 md:gap-4 px-2 py-1 transition-colors mb-4">
             <span class="w-24 text-tui-muted hidden md:inline-block">drwxr-xr-x</span>
             <span class="w-4 text-tui-muted hidden md:inline-block">5</span>
-            <span class="w-48 text-tui-muted hidden md:inline-block">agasenka</span>
-            <span class="w-16 text-tui-muted hidden md:inline-block">users</span>
-            <span class="w-10 text-right text-tui-muted">4.0K</span>
-            <span class="w-12 sm:w-24 text-tui-muted">System</span>
-            <span class="font-bold text-blue-400 truncate flex-1">..</span>
+            <span class="w-20 text-tui-muted hidden lg:inline-block">agasenka</span>
+            <span class="w-16 text-tui-muted hidden lg:inline-block">users</span>
+            <span class="w-10 text-right text-tui-muted hidden sm:inline-block">4.0K</span>
+            <span class="w-20 text-tui-muted hidden sm:inline-block">System</span>
+            <span class="font-bold text-blue-400">..</span>
           </div>
 
           <a href="#" 
@@ -236,11 +236,11 @@ const renderedMarkdown = computed(() => {
             
             <span :class="[selectedIndex === index ? 'text-tui-bg' : 'text-tui-muted', 'w-24 hidden md:inline-block']">{{ entry.permissions }}</span>
             <span :class="[selectedIndex === index ? 'text-tui-bg' : 'text-tui-muted', 'w-4 hidden md:inline-block']">{{ entry.type === 'dir' ? '2' : '1' }}</span>
-            <span :class="[selectedIndex === index ? 'text-tui-bg' : 'text-tui-muted', 'w-48 hidden md:inline-block']">{{ entry.owner }}</span>
-            <span :class="[selectedIndex === index ? 'text-tui-bg' : 'text-tui-muted', 'w-16 hidden md:inline-block']">users</span>
-            <span :class="[selectedIndex === index ? 'text-tui-bg' : 'text-tui-muted', 'w-10 text-right shrink-0']">{{ entry.size }}</span>
-            <span :class="[selectedIndex === index ? 'text-tui-bg' : 'text-tui-muted', 'w-32 sm:w-40 shrink-0']">{{ entry.date.replace(' 2026', '') }}</span>
-            <span :class="['font-bold truncate flex-1', selectedIndex === index ? 'text-tui-bg' : (entry.type === 'dir' ? 'text-blue-400' : 'text-tui-text')]">{{ entry.name }}</span>
+            <span :class="[selectedIndex === index ? 'text-tui-bg' : 'text-tui-muted', 'w-20 hidden lg:inline-block']">{{ entry.owner }}</span>
+            <span :class="[selectedIndex === index ? 'text-tui-bg' : 'text-tui-muted', 'w-16 hidden lg:inline-block']">users</span>
+            <span :class="[selectedIndex === index ? 'text-tui-bg' : 'text-tui-muted', 'w-10 text-right shrink-0 hidden sm:inline-block']">{{ entry.size }}</span>
+            <span :class="[selectedIndex === index ? 'text-tui-bg' : 'text-tui-muted', 'w-28 shrink-0 hidden sm:inline-block']">{{ entry.date.replace(' 2026', '') }}</span>
+            <span :class="['font-bold', selectedIndex === index ? 'text-tui-bg' : (entry.type === 'dir' ? 'text-blue-400' : 'text-tui-text')]">{{ entry.name }}</span>
           </a>
         </div>
       </div>
